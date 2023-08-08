@@ -1,18 +1,18 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_chessboard - Entry point
+ * @a: array
+ * Return: Always 0 (Success)
  */
-int main(void)
+void print_chessboard(char (*a)[8])
 {
-    char *s0 = "Bob Dylan";
-    char *s1 = "Robert Allen";
+	int i;
+	int j;
 
-    printf("%s, %s\n", s0, s1);
-    set_string(&s1, s0);
-    printf("%s, %s\n", s0, s1);
-    return (0);
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+			_putchar(a[i][j]);
+		_putchar('\n');
+	}
 }
