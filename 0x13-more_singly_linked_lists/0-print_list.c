@@ -1,18 +1,25 @@
 #include <stdio.h>
-#include "list_.h"
+#include "lists.h"
 
-size_t display_list(const list_t *head) {
-    size_t element_count = 0;
+/**
+ * print_list - prints all the elements
+ * @h: pointer to the list_t list to print
+ *
+ * Return: the number of nodes printed
+ */
+size_t print_list(const list_t *h)
+{
+	size_t s = 0;
 
-    while (head != NULL) {
-        if (head->str == NULL) {
-            printf("[0] (nil)\n");
-        } else {
-            printf("[%d] %s\n", head->len, head->str);
-        }
-        element_count++;
-        head = head->next;
-    }
+	while (h)
+	{
+		if (!h->str)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
+		h = h->next;
+		s++;
+	}
 
-    return element_count;
+	return (s);
 }
