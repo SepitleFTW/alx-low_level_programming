@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * add_nodeint_end - adds a node at the end of th efuntion
  * @head: pointer to the first element in the below list
