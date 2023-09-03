@@ -1,5 +1,3 @@
-0-binary_to_uint.c
-
 #include "main.h"
 
 /**
@@ -25,3 +23,4 @@ unsigned int binary_to_uint(const char *b)
 
 	return (dec_val);
 }
+
