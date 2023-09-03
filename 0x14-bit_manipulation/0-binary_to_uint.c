@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * @b will point to a string of 1 and 0 chars
  * Return if any  'error'
