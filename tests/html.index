@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!-- the scrip below is for the drop down menu on the top right-->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+content.style.display = "none";
+} else {
+content.style.display = "block";
+}
+});
+}
+
+    </script>
+</head>
+
+<body>
+    <!--this code is originally mine but recreated by CHATgpt to fix drop down issue-->
+    <div class="container-fluid">
+        <a class="navbar-brand">Germiston High School Rowing</a>
+        <button class="navbar-brand" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav style="float:right">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <label for="X"></label>
+            <select name="noobs" id="noobs">
+              <option value=""></option>
+              <option value="noob1">Gallery</option>
+              <option value="noob2">N</option>
+              <option value="noob3">Noob3</option>
+              <option value="noob4">Noob4</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 banner-box"><a>
+                    <img class="banner" src="images/school.jpg" alt="u16boys"></a></div>
+                    <div class="col-6 heading"> <a><h3>Welcome to Germiston High Rowing</h3></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </body>
